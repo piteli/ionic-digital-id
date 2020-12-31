@@ -1,0 +1,12 @@
+<ion-header mode="md" class="ion-no-border">
+  <ion-toolbar [color]="header.toolbar.color === 'none' ? '' : header.toolbar.color">
+    <ion-buttons [hidden]="header.visibility.back_btn" slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title [class]="header.css.title">{{header.label.title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-text [hidden]="header.css.btn === ''" [class]="header.css.btn"><span>{{header.label.btn}}</span></ion-text>
+      <ion-button [hidden]="header.css.btn2 === ''" [class]="header.css.btn2">{{header.label.btn2}}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
