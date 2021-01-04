@@ -1,12 +1,19 @@
-<ion-content>
-  <div class="image-container">
-    <img src="assets/images/johor-logo.png" />
-    <span class="logo-title">Full-Name</span>
-  </div>
+<ion-router-outlet></ion-router-outlet>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="my_account">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>My Account</ion-label>
+    </ion-tab-button>
 
-  <app-header [header]="HEADER"></app-header>
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
 
-  <div class="body-container">
-    <img src="/assets/images/Capture.PNG" />
-  </div>
-</ion-content>
+    <ion-tab-button tab="my_e_id">
+      <img src="assets/icon/id-card.png" style="height:30px;width:30px;" />
+      <ion-label>My E ID</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
