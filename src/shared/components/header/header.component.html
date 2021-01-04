@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title [class]="header.css.title">{{header.label.title}}</ion-title>
-    <ion-buttons slot="end">
+    <ion-buttons style="display:flex; align-items: center;" slot="end">
       <ion-text [hidden]="header.css.btn === ''" [class]="header.css.btn"><span>{{header.label.btn}}</span></ion-text>
       <ion-button [hidden]="header.css.btn2 === ''" [class]="header.css.btn2">{{header.label.btn2}}</ion-button>
     </ion-buttons>

@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PasswordForgotPageRoutingModule } from './password-forgot-routing.module';
 
 import { PasswordForgotPage } from './password-forgot.page';
-
+import { HeaderComponent } from '../../../shared/components/header/header.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +15,6 @@ import { PasswordForgotPage } from './password-forgot.page';
     IonicModule,
     PasswordForgotPageRoutingModule
   ],
-  declarations: [PasswordForgotPage]
+  declarations: [PasswordForgotPage, HeaderComponent]
 })
 export class PasswordForgotPageModule {}

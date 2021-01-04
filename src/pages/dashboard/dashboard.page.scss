@@ -1,0 +1,110 @@
+.image-container{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    width : auto;
+    height : auto;
+    padding : 10px;
+    padding-top : 20px;
+}
+
+.body-container{
+    padding : 10px 25px 25px 25px;
+}
+
+.label-input{
+    --ion-font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color : #9CA5B4;
+}
+
+.label-hint{
+    --ion-font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color : #5E656F;
+}
+
+.ion-input-selected{
+    border:solid 1px  #03A87C; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.ion-input-warning{
+    border:solid 1px  #ba3232; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.ion-input-normal{
+    border:1px solid #5E656F; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-text{
+    --font-family: "Source Sans Pro";
+    font-size : 16px;
+}
+
+.footer-text-btn{
+    text-decoration: underline;
+    font-weight: bold;
+    color : #0071DF;
+}
+
+.label-warning{
+    color:#ba3232;
+}
+
+.logo-title{
+    --font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-decoration-line: underline;
+    color : #222F83;
+    line-height: 25px;
+    padding : 10px;
+}
+
+.logo-subtitle{
+    --font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 25px;
+    color: #222F83;
+}
+
+.forgot-your-password{
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    text-decoration-line: underline;
+    color : #9CA5B4;
+}
+
+.button-login{
+    --background: #0071DF;
+    --font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size : 16px;
+}

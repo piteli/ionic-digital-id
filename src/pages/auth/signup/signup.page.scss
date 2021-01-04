@@ -1,15 +1,85 @@
 .label-input{
-    font-family: "Source Sans Pro";
+    --ion-font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
+    color : #9CA5B4;
 }
 
 .label-hint{
-    font-family: "Source Sans Pro";
+    --ion-font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
+    color : #5E656F;
+}
+
+.ion-input-selected{
+    border:solid 1px  #03A87C; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.ion-input-warning{
+    border:solid 1px  #ba3232; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.ion-input-normal{
+    border:1px solid #5E656F; 
+    height:50px;
+    --padding-start : 10px;
+}
+
+.agreement{
+    --color: #9CA5B4;
+    --font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.terms{
+    text-decoration: underline;
+    --color:#5E656F;
+    font-weight: bold;
+}
+
+.privacy-policy{
+    text-decoration: underline;
+    --color: #5E656F;
+    font-weight: bold;
+}
+
+.button-signup{
+    --background: #03A87C;
+    --font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size : 16px;
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-text{
+    --font-family: "Source Sans Pro";
+    font-size : 16px;
+}
+
+.footer-text-btn{
+    text-decoration: underline;
+    font-weight: bold;
+    color : #0071DF;
+}
+
+.label-warning{
+    color:#ba3232;
 }

@@ -2,16 +2,35 @@
 
 <ion-content>
   <div style="padding:25px;">
-    <p class="label-input"><span class="label">Full Name</span><span class="warning"></span></p>
-    <ion-input style="border:solid 1px  #03A87C; height:50px;"></ion-input>
+    <p class="label-input"><span class="label">Full Name</span></p>
+    <ion-input [class]="bar_fullname" [value]="inputs.fullname" [(ngModel)]="inputs.fullname" (touchstart)="onFocusInput('FULLNAME')" (focus)="onFocusInput('FULLNAME')" (blur)="onBlurInput()"></ion-input>
     <span class="label-hint label-hint-fullname"></span>
+
     <br>
-    <p class="label-input"><span class="label">Email</span><span class="warning"></span></p>
-    <ion-input style="border:1px solid #5E656F; height:50px;"></ion-input>
+
+    <p class="label-input"><span class="label">Email</span><span class="label-warning"> * <span>{{error_email}}</span></span></p>
+    <ion-input [class]="bar_email" [value]="inputs.email" [(ngModel)]="inputs.email" (touchstart)="onFocusInput('EMAIL')" (focus)="onFocusInput('EMAIL')" (blur)="onBlurInput()"></ion-input>
     <span class="label-hint label-hint-email"></span>
+
     <br>
-    <p class="label-input"><span class="label">Password</span><span class="warning"></span></p>
-    <ion-input type="password" style="border:1px solid #5E656F; height:50px;"></ion-input>
+
+    <p class="label-input"><span class="label">Password</span><span class="label-warning"> * <span>{{error_password}}</span></span></p>
+    <ion-input type="password" [value]="inputs.password" [(ngModel)]="inputs.password" [class]="bar_password" (touchstart)="onFocusInput('PASSWORD')" (focus)="onFocusInput('PASSWORD')" (blur)="onBlurInput()"></ion-input>
     <span class="label-hint label-hint-password">Use 8 or more characters with a mix of letters, numbers, and symbols.</span>
+
+    <br><br><br>
+
+    <div style="display:flex;align-items: center;">
+      <ion-checkbox (ionChange)="checkboxChanged($event);" style="--size:20px; margin-right:10px;--background-checked: #03A87C;--border-color-checked:#03A87C;" mode="md"></ion-checkbox>
+      <ion-label class="agreement">I agree to the <span class="terms">Terms</span> and <span class="privacy-policy">Privacy Policy.</span><span class="label-warning"> *{{error_agreement}}</span></ion-label>
+    </div> 
+ 
+    <br>
+
+    <ion-button class="button-signup" color="success" expand="full" (click)="signUp();">Sign Up</ion-button>
   </div>
 </ion-content>
+
+<div class="footer">
+  <span class="ion-text-wrap footer-text">Already have account? <span class="footer-text-btn">Log In</span></span>
+</div>

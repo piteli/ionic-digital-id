@@ -1,11 +1,28 @@
 .header-title-sign-up{
     --color : #03A87C;
+    --ion-font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
     font-size: 23px;
+    line-height: 25px;
 }
 
 .header-title-forgot-password{
     --color : #0071DF;
+    --ion-font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
     font-size: 23px;
+    line-height: 25px;
+}
+
+.header-title-forgot-password2{
+    --color : #0071DF;
+    --ion-font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .signup-btn{
@@ -13,7 +30,7 @@
     font-weight: normal;
     font-size: 13px;
     color : #9CA5B4;
-    font-family: "Source Sans Pro";
+    --ion-font-family: "Source Sans Pro";
     text-transform: none;
 }
 .signup-btn2{
@@ -21,11 +38,13 @@
     font-weight: bold;
     color : #1c78a6;
     text-transform: none;
+    --ion-font-family: "Source Sans Pro";
 }
 
 .forgot-password-btn{
     text-decoration: underline;
     color : #FBC926;
     font-size : 13px;
-    font-family: "Source Sans Pro";
+    --ion-font-family: "Source Sans Pro";
+    text-transform: none;
 }

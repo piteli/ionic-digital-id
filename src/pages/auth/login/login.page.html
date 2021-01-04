@@ -1,9 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="image-container">
+    <img src="assets/images/johor-logo.png" />
+    <span class="logo-title">JOHOR</span>
+    <span class="logo-subtitle">Digital ID<br>Cards</span>
+  </div>
 
+  <app-header [header]="HEADER"></app-header>
+
+  <div class="body-container">
+    <p class="label-input"><span class="label">Email<span class="label-warning"> * <span>{{error_email}}</span></span></span></p>
+    <ion-input [class]="bar_email" [value]="inputs.email" [(ngModel)]="inputs.email" (touchstart)="onFocusInput('EMAIL')" (focus)="onFocusInput('EMAIL')"></ion-input>
+    <span class="label-hint label-hint-fullname"></span>
+
+    <br>
+
+    <p class="label-input"><span class="label">Password<span class="label-warning"> * <span>{{error_password}}</span></span></span></p>
+    <ion-input [class]="bar_password" [value]="inputs.password" [(ngModel)]="inputs.password" (touchstart)="onFocusInput('PASSWORD')" (focus)="onFocusInput('PASSWORD')"></ion-input>
+    <span class="label-hint label-hint-fullname"></span>
+
+    <p class="forgot-your-password">Forgot your password?</p>
+
+    <ion-button class="button-login" expand="full" (click)="login();">Login</ion-button>
+  </div>
 </ion-content>
+
+<div class="footer">
+  <span class="ion-text-wrap footer-text">Don't have account? <span class="footer-text-btn">Sign In</span></span>
+</div>

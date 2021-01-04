@@ -8,7 +8,6 @@ import { SignupPageRoutingModule } from './signup-routing.module';
 
 import { SignupPage } from './signup.page';
 import { HeaderComponent } from '../../../shared/components/header/header.component';
-import { InputComponent } from '../../../shared/components/input/input.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +15,7 @@ import { InputComponent } from '../../../shared/components/input/input.component
     IonicModule,
     SignupPageRoutingModule
   ],
-  declarations: [SignupPage, HeaderComponent, InputComponent],
+  declarations: [SignupPage, HeaderComponent],
   schemas : [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SignupPageModule {}

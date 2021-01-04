@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PasswordChangePageRoutingModule } from './password-change-routing.module';
 
 import { PasswordChangePage } from './password-change.page';
+import { HeaderComponent } from '../../../shared/components/header/header.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { PasswordChangePage } from './password-change.page';
     IonicModule,
     PasswordChangePageRoutingModule
   ],
-  declarations: [PasswordChangePage]
+  declarations: [PasswordChangePage, HeaderComponent]
 })
 export class PasswordChangePageModule {}
