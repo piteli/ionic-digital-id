@@ -3,12 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
@@ -30,7 +26,7 @@ const routes: Routes = [
   {
     path: 'password-change',
     loadChildren: () => import('../pages/auth/password-change/password-change.module').then( m => m.PasswordChangePageModule)
-  },
+  }
 ];
 
 @NgModule({

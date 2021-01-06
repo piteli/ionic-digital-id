@@ -1,0 +1,100 @@
+.image-container{
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  width : auto;
+  height : auto;
+  padding : 20px;
+  padding-top : 30px;
+}
+
+.body-container{
+}
+
+.logo-title{
+  --font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  color : #222F83;
+  line-height: 35px;
+  padding : 10px;
+  text-align: center;
+}
+
+.icon-box{
+  filter: blur(3px);
+  border-radius: 10px;
+  background : rgba(0, 113, 223, 0.46);
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  width : 116px;
+  height : 95px;
+}
+
+.center{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  color : #222F83;
+  /* or 179% */
+  text-align: center;
+}
+
+.parent-news{
+  padding : 30px;
+  padding-top : 15px;
+  padding-bottom : 10px;
+}
+
+.child-news{
+  display : flex;
+  flex-direction: column;
+  background-color: #222F83;
+  border-radius : 2px;
+}
+
+.header{
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  align-items: center;  
+  padding : 10px;
+}
+
+
+.header-span-one{
+  flex : 0.5;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color : white;
+  text-align : center;
+  /* or 179% */
+}
+
+.header-span-two{
+  flex : 0.5;
+  font-family: "Source Sans Pr"o;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  text-align : center;
+  color : white;
+}
+
+.body-news{
+  padding : 10px;
+  display : flex;
+  flex-direction : row;
+  align-items: center;
+}
