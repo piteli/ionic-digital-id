@@ -1,0 +1,53 @@
+<div class="image-container">
+  <img src="assets/images/johor-logo.png" />
+  <span class="logo-title">Verify Your<br>Identity</span>
+</div>
+
+<div class="image-step">
+  <img src="assets/images/identity-verification-steps/step_1.png" />
+</div>
+
+<div class="form-class">
+  
+<ion-input [value]="input.first_name" [(ngModel)]="input.first_name" placeholder="First Name"></ion-input>
+
+<ion-input [value]="input.last_name" [(ngModel)]="input.last_name" placeholder="Last Name"></ion-input>
+
+<ion-label>Nationality</ion-label>
+<ion-select [(ngModel)]="input.nationality">
+  <ion-select-option value="Malaysia">Malaysia</ion-select-option>
+</ion-select>
+
+<ion-label>IC Type</ion-label>
+<ion-select [(ngModel)]="input.ic_type">
+  <ion-select-option value="NRIC">NRIC</ion-select-option>
+  <ion-select-option value="citizen">Citizen</ion-select-option>
+  <ion-select-option value="passport">Passport</ion-select-option>
+  <ion-select-option value="driving_license">Driving License</ion-select-option>
+</ion-select>
+
+<ion-label>Gender</ion-label>
+<ion-select [(ngModel)]="input.gender">
+  <ion-select-option>Male</ion-select-option>
+  <ion-select-option>Female</ion-select-option>
+</ion-select>
+
+<ion-label>Date Of Birth</ion-label>
+<ion-select>
+  <ion-select-option></ion-select-option>
+  <ion-select-option></ion-select-option>
+</ion-select>
+
+<div>
+  <ion-select placeholder="Mobile Number">
+    <ion-select-option>06</ion-select-option>
+    <ion-select-option>03</ion-select-option>
+    <ion-select-option>01</ion-select-option>
+    <ion-select-option>00</ion-select-option>
+  </ion-select>
+</div>
+
+<ion-button color="primary" (click)="submit()">Submit</ion-button>
+</div>
+
+

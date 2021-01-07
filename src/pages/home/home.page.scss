@@ -24,7 +24,6 @@
 }
 
 .icon-box{
-  filter: blur(3px);
   border-radius: 10px;
   background : rgba(0, 113, 223, 0.46);
   display : flex;
@@ -32,6 +31,8 @@
   align-items: center;
   width : 116px;
   height : 95px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 113, 223, 0.46);
+  border-color:  rgba(0, 113, 223, 0.46);
 }
 
 .center{

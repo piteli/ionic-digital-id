@@ -1,0 +1,36 @@
+.image-container{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    width : auto;
+    height : auto;
+    padding : 20px;
+    padding-top : 0px;
+    padding-bottom : 0px;
+  }
+
+.logo-title{
+    --font-family: " Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color : #222F83;
+    line-height: 25px;
+    padding : 10px;
+    text-align: left;
+  }
+
+
+.image-step{
+    display : flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.form-class{
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}

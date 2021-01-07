@@ -1,0 +1,31 @@
+<ion-header mode="md" class="ion-no-border">
+  <ion-toolbar style="--color : #0071DF;--ion-font-family:'Source Sans Pro';font-style: normal;
+  font-weight: bold;font-size: 23px;line-height: 25px;">
+    <ion-buttons slot="start">
+      <ion-button *ngIf="!backButtonVisible" fill="clear" (click)="goBack();">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button *ngIf="!nextButtonVisible" fill="clear" (click)="goNext();">
+        Next
+        <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides class="swiper-no-swiping" style="overflow-y: scroll;display: block;" [options]="slideOpts" #ionSlides>
+    <ion-slide>
+        <app-verify-identity></app-verify-identity>
+    </ion-slide>
+    <ion-slide>
+        <app-proof-eligibility></app-proof-eligibility>
+    </ion-slide>
+    <ion-slide>
+        <app-identity-verification></app-identity-verification>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
